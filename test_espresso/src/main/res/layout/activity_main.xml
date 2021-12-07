@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/select_language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="28dp"
+                android:text="Select Your Preferred Language"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <!-- LinearLayout contains all the
+                 languages button in a vertical order-->
+            <LinearLayout
+                android:id="@+id/linear_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/select_language"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="22dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/english"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClick"
+                    android:padding="16dp"
+                    android:text="English"
+                    android:textAllCaps="true"
+                    android:textColor="#0F9D58"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/german"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClick"
+                    android:padding="16dp"
+                    android:text="German"
+                    android:textAllCaps="true"
+                    android:textColor="#0F9D58"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/french"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClick"
+                    android:padding="16dp"
+                    android:text="French"
+                    android:textAllCaps="true"
+                    android:textColor="#0F9D58"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/hindi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClick"
+                    android:padding="16dp"
+                    android:text="Hindi"
+                    android:textAllCaps="true"
+                    android:textColor="#0F9D58"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/urdu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClick"
+                    android:padding="16dp"
+                    android:text="Urdu"
+                    android:textAllCaps="true"
+                    android:textColor="#0F9D58"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/chosen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="Your Chosen Language is : "
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <!-- The following textView shows the
+                 preferred language chosen by the user. -->
+            <TextView
+                android:id="@+id/preferred_language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chosen"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:hint="-------------"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_header_reply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/preferred_language"
+                android:layout_marginTop="12dp"
+                android:text="@string/text_header_reply"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"/>
+
+
+            <TextView
+                android:id="@+id/text_message_reply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_header_reply"
+                android:layout_marginTop="8dp"
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"/>
+
+            <Button
+                android:id="@+id/button_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_message_reply"
+                android:onClick="launchSecondActivity"
+                android:text="Send"
+                android:layout_centerHorizontal="true" />
+
+            <EditText
+                android:id="@+id/editText_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button_name"
+                android:ems="10"
+                android:layout_margin="12dp"
+                android:hint="@string/editText_main"
+                android:inputType="textLongMessage"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="12dp" />
+        </RelativeLayout>
+
+<!--    </ScrollView>-->
+
+</layout>

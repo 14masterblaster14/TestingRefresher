@@ -1,0 +1,16 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() // Warning: this repository is going to shut down soon
+    }
+}
+rootProject.name = "TestingRefresher"
+include ':app'
+include ':roomtest'
+include ':testjunit'
+include ':test_mockito'
+include ':test_espresso'
+include ':test_espresso1'
+include ':test_mockito_mvp'
