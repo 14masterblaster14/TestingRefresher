@@ -52,6 +52,7 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    testImplementation 'org.mockito:mockito-inline:2.19.0'
 
     // Available for Local Tests only i.e. 'com(test)'
     testImplementation 'junit:junit:4.13.2'
