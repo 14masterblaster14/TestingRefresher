@@ -59,8 +59,13 @@ dependencies {
     testImplementation "com.google.truth:truth:1.1"
     // Mockito Framework latest dependencies where Private and final classes could be tested
     testImplementation "org.mockito:mockito-core:2.28.2"
-
     testImplementation 'org.mockito:mockito-inline:2.19.0'
+
+    // Reflection Dependency
+    implementation("org.jetbrains.kotlin:kotlin-reflect:1.6.10")
+    testImplementation("org.jetbrains.kotlin:kotlin-reflect:1.6.10")
+
+
 
     // optional - Test helpers for LiveData
     testImplementation "androidx.arch.core:core-testing:$arch_version"

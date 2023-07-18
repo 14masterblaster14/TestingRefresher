@@ -17,10 +17,11 @@
         <entry key="..\:/AndroidStudioProjects/TestingRefresher/test_espresso1/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.159375" />
         <entry key="..\:/AndroidStudioProjects/TestingRefresher/test_mockito/src/main/res/layout/activity_main.xml" value="0.276268115942029" />
         <entry key="..\:/AndroidStudioProjects/TestingRefresher/test_mockito_mvp/src/main/res/layout/activity_main.xml" value="0.27219202898550726" />
+        <entry key="..\:/AndroidStudioProjects/TestingRefresher/testjunit/src/main/res/drawable/ic_launcher_background.xml" value="0.290625" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
